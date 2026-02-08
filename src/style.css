@@ -1,0 +1,86 @@
+body {
+    background-image: url("../public/walp.gif");
+}
+
+
+.pixel_font {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    height: 30rem;
+    background-color: rgb(246, 98, 197);
+    backdrop-filter: blur(100%);
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.panel img{
+    width: 10rem;
+    cursor: pointer;
+}
+
+#element_1{
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.buttons button {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    box-shadow: 0 5px 0 rgba(0,0,0,0.25);
+}
+
+
+.buttons button:first-child {
+    background-color: #de0454;
+    color: white;
+}
+
+.buttons button:first-child:hover {
+    background-color: #ff4f91;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 0 rgba(0,0,0,0.25);
+}
+
+.buttons button:first-child:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.25);
+}
+.buttons button:last-child {
+    background-color: #d0d0d0;
+}
+
+.buttons button:last-child:hover {
+    background-color: #bdbdbd;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 0 rgba(0,0,0,0.25);
+}
+
+.buttons button:last-child:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.25);
+}
